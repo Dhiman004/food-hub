@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>barista</title>
+    <!-- <link rel="stylesheet" href="./brista_style.css"> -->
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    /*background-color: #D22718;*/
+    background: linear-gradient(125.31deg, #620807 0%, #F15323 47.92%, #620807 100%);
+}
+
+header{
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 50px;
+    box-sizing: border-box;
+    position: relative;
+    z-index: 10;
+}
+header nav ul{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+.logo{
+    height: 675px;
+    /* background-image: url(.jpg);
+    background-repeat: no-repeat;
+    display: flex;
+    /* justify-content: center; */
+    /* border-radius:20px ; */
+    margin: 15px;
+}
+.logo1{
+    /* border-radius: 70%;
+    padding: 20px ; */
+    object-fit: cover;
+    width: 100%;
+    height: 669px;
+    border-radius: 20px;
+    
+
+}
+.logo-1{
+    cursor: pointer;
+   
+    margin-bottom: -20px;
+    height: 52px;
+    width: 52px;
+    
+}
+.nav-linkss{
+    list-style: none;
+}
+.nav-linkss li{
+    display: inline-block;
+    padding: 0px 20px;
+    font-family: "Ubuntu", sans-serif;
+}
+.nav-linkss li a {
+    transition: all 0.3s ease 0s;
+    color: white;
+    font-weight: 600;
+    text-decoration: none;
+    
+    
+}
+.nav-linkss li a:hover{
+    color: #620807;
+}
+
+/* outlet item div start  */
+
+.outlet-items-container{
+    background-color:whitesmoke;
+    padding: 20px;
+    border-radius: 20px;
+    margin: 15px;
+    
+}
+.heading{
+    color: black;
+}
+.wraps{
+    align-items: center;
+    text-align: center;
+    /*font-family: "Roboto", sans-serif;*/
+    font-weight: 600;
+    font-style: normal;
+}
+.light-meals{
+    align-items: center;
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+
+}
+.wrap-container-main{
+    /* padding: 10px; */
+    margin: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-between;
+}
+.wrap-container{
+    padding: 9px;
+    margin: 20px;
+    height: 110px;
+    width:350px;
+    background-color:white;
+    display: flex;
+    justify-content:space-around;
+    border-radius: 10px;
+}
+.wrap-container-text{
+    height: 90px;
+    width: 170px;
+}
+.wrap-img{
+    height:100px;
+    width: 120px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+.wrap-name{
+    font-family: "Poppins", sans-serif;
+}
+.add-itm-btn{
+    height: 30px;
+    width: 80px;
+    background-color: #ef233c;
+    border-radius: 10px;
+    color: white;
+    border: none;
+    margin-left: 80px;
+    transition: 200ms;
+    transition-timing-function: ease-in-out;
+}
+.add-itm-btn:hover{
+    transform: scale(1.1);
+}
+
+
+/* outlet item div enddd  */
+</style>
+<body>
+
+    <header>
+        <nav class="logo-container">
+            <img src="foodhub-logo.png" alt="logo" class="logo-1">
+        </nav>
+        <nav>
+            <ul class="nav-linkss">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Restaurant</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="./login.html">Log In</a></li>
+                <li><a href="#">Cart</a></li>
+
+            </ul>
+        </nav>
+    </header>
+
+
+    <!-- logo start -->
+    
+    <div class="logo">
+        <img src="./bg-barista-main.png"  class="logo1">
+    </div>
+
+    <!-- logo end -->
+
+    <!-- Light Meals start -->
+    
+    <div class="outlet-items">
+
+        <div class="outlet-items-container">
+
+            <div class="heading">
+                <h1 class="wraps">---------------- Light Meals ----------------</h1>
+            </div>
+
+
+            <div class="wrap-container-main">
+                <div class="wrap-container">
+                    <div class="wrap-container-img">
+                        <img src="./momos.png" alt="" class="wrap-img">
+                    </div>
+                    <div class="wrap-container-text">
+                        <h4 class="wrap-name">Veg Momos</h4>
+                        <p class="wrap-name">&#x20B9 126.00</p>
+                        <button class="add-itm-btn">Add Item</button>
+                    </div>
+                </div>
+
+
+                <div class="wrap-container">
+                    <div class="wrap-container-img">
+                        <img src="https://www.indianveggiedelight.com/wp-content/uploads/2022/12/white-sauce-pasta-featured.jpg" alt="" class="wrap-img">
+                    </div>
+                    <div class="wrap-container-text">
+                        <h4 class="wrap-name">Alfredo Pasta</h4>
+                        <p class="wrap-name">&#x20B9 200.00</p>
+                        <button class="add-itm-btn">Add Item</button>
+                    </div>
+                </div>
+
+
+                <div class="wrap-container">
+                    <div class="wrap-container-img">
+                        <img src="https://static.toiimg.com/photo/93068647.cms" alt="" class="wrap-img">
+                    </div>
+                    <div class="wrap-container-text">
+                        <h4 class="wrap-name">Arabiata Pasta</h4>
+                        <p class="wrap-name">&#x20B9 200.00</p>
+                        <button class="add-itm-btn">Add Item</button>
+                    </div>
+                </div>
+
+
+                
+            </div>
+        </div>
+
+        <!-- Light Meals end -->
+
+
+        <!-- indulgent dessert start -->
+
+        <div class="outlet-items-container">
+
+            <div class="heading">
+                <h1 class="wraps"> ---------------- Indulgent Desserts ----------------</h1>
+            </div>
+            
+
+            <div class="wrap-container-main">
+                <div class="wrap-container">
+                    <div class="wrap-container-img">
+                        <img src="https://media-cdn.tripadvisor.com/media/photo-s/1a/c2/97/2f/buddha-garden-pizza.jpg" alt="" class="wrap-img">
+                    </div>
+                    <div class="wrap-container-text">
+                        <h4 class="wrap-name">Chocolate Excess</h4>
+                        <p class="wrap-name">&#x20B9 215.00</p>
+                        <button class="add-itm-btn">Add Item</button>
+                    </div>
+                </div>
+
+
+                <div class="wrap-container">
+                    <div class="wrap-container-img">
+                        <img src="https://t4.ftcdn.net/jpg/06/43/23/65/360_F_643236518_nFrKDOGvUt79fmAZMndRfyKGtuD9KGCv.jpg" alt="" class="wrap-img">
+                    </div>
+                    <div class="wrap-container-text">
+                        <h4 class="wrap-name">Brownie Fondente</h4>
+                        <p class="wrap-name">&#x20B9 189.00</p>
+                        <button class="add-itm-btn">Add Item</button>
+                    </div>
+                </div>
+                
+
+                <div class="wrap-container">
+                    <div class="wrap-container-img">
+                        <img src="https://images.pexels.com/photos/45202/brownie-dessert-cake-sweet-45202.jpeg?cs=srgb&dl=pexels-pixabay-45202.jpg&fm=jpg" alt="" class="wrap-img">
+                    </div>
+                    <div class="wrap-container-text">
+                        <h4 class="wrap-name">Wicked Brownie</h4>
+                        <p class="wrap-name">&#x20B9 288.00</p>
+                        <button class="add-itm-btn">Add Item</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- indulgent dessert end -->
+
+
+        <!-- coffee companion start -->
+
+        <div class="outlet-items-container">
+
+            <div class="heading">
+                <h1 class="wraps">---------------- Coffee Companion ----------------</h1>
+            </div>
+
+
+            <div class="wrap-container-main">
+                <div class="wrap-container">
+                    <div class="wrap-container-img">
+                        <img src="https://images.unsplash.com/photo-1607958996333-41aef7caefaa?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8Ymx1ZWJlcnJ5JTIwbXVmZmlufGVufDB8fDB8fHww" alt="" class="wrap-img">
+                    </div>
+                    <div class="wrap-container-text">
+                        <h4 class="wrap-name">Blueberry Muffin</h4>
+                        <p class="wrap-name">&#x20B9 176.00</p>
+                        <button class="add-itm-btn">Add Item</button>
+                    </div>
+                </div>
+
+
+                <div class="wrap-container">
+                    <div class="wrap-container-img">
+                        <img src="https://www.shutterstock.com/image-photo/healthy-gluten-free-almond-muffins-600nw-1936592272.jpg" alt="" class="wrap-img">
+                    </div>
+                    <div class="wrap-container-text">
+                        <h4 class="wrap-name">Almond Muffin</h4>
+                        <p class="wrap-name">&#x20B9 176.00</p>
+                        <button class="add-itm-btn">Add Item</button>
+                    </div>
+                </div>
+
+
+                <div class="wrap-container">
+                    <div class="wrap-container-img">
+                        <img src="https://static.vecteezy.com/system/resources/thumbnails/010/375/786/small_2x/lemon-cake-with-coconut-flakes-piece-of-delicate-vanilla-dessert-with-cream-photo.jpg" alt="" class="wrap-img">
+                    </div>
+                    <div class="wrap-container-text">
+                        <h4 class="wrap-name">Lemon Cake</h4>
+                        <p class="wrap-name">&#x20B9 110.00</p>
+                        <button class="add-itm-btn">Add Item</button>
+                    </div>
+                </div>
+
+
+                <div class="wrap-container">
+                    <div class="wrap-container-img">
+                        <img src="https://media.istockphoto.com/id/1421456788/photo/marble-chocolate-pound-cake-or-loaf-bread.webp?b=1&s=170667a&w=0&k=20&c=R7clDY-458FiW2uK_ixIXSlm35kMVfUmc6Wjkm5skSU=" alt="" class="wrap-img">
+                    </div>
+                    <div class="wrap-container-text">
+                        <h4 class="wrap-name">Marble Cake</h4>
+                        <p class="wrap-name">&#x20B9 110.00</p>
+                        <button class="add-itm-btn">Add Item</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+                
+        <!-- coffee companion end -->
+
+
+        <!-- quick bites start -->
+
+
+        <div class="outlet-items-container">
+
+            <div class="heading">
+                <h1 class="wraps">---------------- Quick Bites ----------------</h1>
+            </div>
+
+            <div class="wrap-container-main">
+                <div class="wrap-container">
+                    <div class="wrap-container-img">
+                        <img src="https://www.blueberriesfoods.com/wp-content/uploads/2018/10/Vegetable-Puffs-1.png" alt="" class="wrap-img">
+                    </div>
+                    <div class="wrap-container-text">
+                        <h4 class="wrap-name">Veg Puff</h4>
+                        <p class="wrap-name">&#x20B9 110.00</p>
+                        <button class="add-itm-btn">Add Item</button>
+                    </div>
+                </div>
+
+
+                <div class="wrap-container">
+                    <div class="wrap-container-img">
+                        <img src="https://t4.ftcdn.net/jpg/01/77/40/41/360_F_177404119_oH2uSPYmTqPqTfGNHJUEO7c7j4oHDghr.jpg" alt="" class="wrap-img">
+                    </div>
+                    <div class="wrap-container-text">
+                        <h4 class="wrap-name">Cheesy Garlic Bread</h4>
+                        <p class="wrap-name">&#x20B9 162.00</p>
+                        <button class="add-itm-btn">Add Item</button>
+                    </div>
+                </div>
+
+
+                <div class="wrap-container">
+                    <div class="wrap-container-img">
+                        <img src="https://healthyhappylife.com/wp-content/uploads/2012/05/daiya-large-cheese-sandwich564_edited-3.jpg" alt="" class="wrap-img">
+                    </div>
+                    <div class="wrap-container-text">
+                        <h4 class="wrap-name">Three Pepper Cheese Toastie</h4>
+                        <p class="wrap-name">&#x20B9 120.00</p>
+                        <button class="add-itm-btn">Add Item</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- quick bites end -->
+
+
+        <!-- sandwiches start -->
+
+        <div class="outlet-items-container">
+
+            <div class="heading">
+                <h1 class="wraps">---------------- Sandwiches ----------------</h1>
+            </div>
+
+            <div class="wrap-container-main">
+                <div class="wrap-container">
+                    <div class="wrap-container-img">
+                        <img src="https://theflavoursofkitchen.com/wp-content/uploads/2017/06/Spinach-Corn-Sandwich-1-scaled.jpg" alt="" class="wrap-img">
+                    </div>
+                    <div class="wrap-container-text">
+                        <h4 class="wrap-name">Spinach & Corn</h4>
+                        <p class="wrap-name">&#x20B9 231.00</p>
+                        <button class="add-itm-btn">Add Item</button>
+                    </div>
+                </div>
+
+                
+                <div class="wrap-container">
+                    <div class="wrap-container-img">
+                        <img src="https://media.istockphoto.com/id/1085140342/photo/paneer-tikka-sandwich-is-a-popular-indian-version-of-sandwich-using-cottage-cheese-curry-with.jpg?s=612x612&w=0&k=20&c=imYCKhuyyVT96T5oZ5QR0vYevepAVR9xeYOtNL5ntLs=" alt="" class="wrap-img">
+                    </div>
+                    <div class="wrap-container-text">
+                        <h4 class="wrap-name">Paneer Tikka</h4>
+                        <p class="wrap-name">&#x20B9 225.00</p>
+                        <button class="add-itm-btn">Add Item</button>
+                    </div>
+                </div>
+                
+                
+                
+                <div class="wrap-container">
+                    <div class="wrap-container-img">
+                        <img src="https://sundaysuppermovement.com/wp-content/uploads/2022/11/mushroom-grilled-cheese-featured.jpg" alt="" class="wrap-img">
+                    </div>
+                    <div class="wrap-container-text">
+                        <h4 class="wrap-name">Mushroom Toastie</h4>
+                        <p class="wrap-name">&#x20B9 178.00</p>
+                        <button class="add-itm-btn">Add Item</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+                
+        <!-- sandwiches end -->
+        
+        
+        <!-- hot classics start -->
+
+        <div class="outlet-items-container">
+            <div class="heading">
+                <h1 class="wraps">---------------- Hot Classics ----------------</h1>
+            </div>
+            <div class="wrap-container-main">
+                <div class="wrap-container">
+                    <div class="wrap-container-img">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/Cappuccino_at_Sightglass_Coffee.jpg/1200px-Cappuccino_at_Sightglass_Coffee.jpg" alt="" class="wrap-img">
+                    </div>
+                    <div class="wrap-container-text">
+                        <h4 class="wrap-name">Cappuccino Large</h4>
+                        <p class="wrap-name">&#x20B9 163.00</p>
+                        <button class="add-itm-btn">Add Item</button>
+                    </div>
+                </div>
+
+
+                <div class="wrap-container">
+                    <div class="wrap-container-img">
+                        <img src="https://wallpapercave.com/wp/wp9571900.jpg" alt="" class="wrap-img">
+                    </div>
+                    <div class="wrap-container-text">
+                        <h4 class="wrap-name">Cafe Americano Large</h4>
+                        <p class="wrap-name">&#x20B9 147.00</p>
+                        <button class="add-itm-btn">Add Item</button>
+                    </div>
+                </div>
+
+
+                <div class="wrap-container">
+                    <div class="wrap-container-img">
+                        <img src="https://www.thespruceeats.com/thmb/0CK65lVOSHILEZXSh1dVJ_Hl4Hc=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/how-to-make-caffe-latte-765372-hero-01-2417e49c4a9c4789b3abdd36885f06ab.jpg" alt="" class="wrap-img">
+                    </div>
+                    <div class="wrap-container-text">
+                        <h4 class="wrap-name">Caffe Latte Large</h4>
+                        <p class="wrap-name">&#x20B9 183.00</p>
+                        <button class="add-itm-btn">Add Item</button>
+                    </div>
+                </div>
+
+
+                <div class="wrap-container">
+                    <div class="wrap-container-img">
+                        <img src="https://media.istockphoto.com/id/1065068246/photo/latte-hot-coffee-in-a-cup-its-a-popular-drink-in-the-world-for-refresh-at-the-morning-or-make.jpg?s=612x612&w=0&k=20&c=p1O0byhRmTKzKEQnecilRZayWbHyA-fTfly8bTwApdk=" alt="" class="wrap-img">
+                    </div>
+                    <div class="wrap-container-text">
+                        <h4 class="wrap-name">Flat White Large</h4>
+                        <p class="wrap-name">&#x20B9 246.00</p>
+                        <button class="add-itm-btn">Add Item</button>
+                    </div>
+                </div>
+
+
+                <div class="wrap-container">
+                    <div class="wrap-container-img">
+                        <img src="https://assets.epicurious.com/photos/54de2fa1e77a7de93305de53/6:4/w_1998,h_1332,c_limit/5_french%20press%20finished%20pour.jpg" alt="" class="wrap-img">
+                    </div>
+                    <div class="wrap-container-text">
+                        <h4 class="wrap-name">Brewed-French Press Regular</h4>
+                        <p class="wrap-name">&#x20B9 131.00</p>
+                        <button class="add-itm-btn">Add Item</button>
+                    </div>
+                </div>
+                
+                
+                <div class="wrap-container">
+                    <div class="wrap-container-img">
+                        <img src="https://c1.wallpaperflare.com/preview/143/167/827/cappuccino-beverage-in-the-morning-do-the-job.jpg" alt="" class="wrap-img">
+                    </div>
+                    <div class="wrap-container-text">
+                        <h4 class="wrap-name">Cafe Mocha Regular</h4>
+                        <p class="wrap-name">&#x20B9 220.00</p>
+                        <button class="add-itm-btn">Add Item</button>
+                    </div>
+                </div>    
+            </div>
+        </div>
+
+        <!-- hot classics end -->
+
+
+        <!-- chillers/mojito start -->
+
+        <div class="outlet-items-container">
+
+            <div class="heading">
+                <h1 class="wraps">---------------- Chillers/Ice Tea/Mojito ----------------</h1>
+            </div>
+
+            <div class="wrap-container-main">
+                <div class="wrap-container">
+                    <div class="wrap-container-img">
+                        <img src="https://images.ctfassets.net/v601h1fyjgba/1vlXSpBbgUo9yLzh71tnOT/a1afdbe54a383d064576b5e628035f04/Iced_Americano.jpg" alt="" class="wrap-img">
+                    </div>
+                    <div class="wrap-container-text">
+                        <h4 class="wrap-name">Iced Americano Small</h4>
+                        <p class="wrap-name">&#x20B9 151.00</p>
+                        <button class="add-itm-btn">Add Item</button>
+                    </div>
+                </div>
+
+
+                <div class="wrap-container">
+                    <div class="wrap-container-img">
+                        <img src="https://media.istockphoto.com/id/1154562777/photo/glass-of-ice-tea-on-wooden-table.jpg?s=612x612&w=0&k=20&c=FlTsT1yRjm-xso3MIEjT6YEK6C9qRrmCwzwGWD6BFfc=" alt="" class="wrap-img">
+                    </div>
+                    <div class="wrap-container-text">
+                        <h4 class="wrap-name">Lemon Ice Tea Small</h4>
+                        <p class="wrap-name">&#x20B9 151.00</p>
+                        <button class="add-itm-btn">Add Item</button>
+                    </div>
+                </div>
+
+
+                <div class="wrap-container">
+                    <div class="wrap-container-img">
+                        <img src="https://media.istockphoto.com/id/1250210467/photo/homemade-peach-iced-tea-or-lemonade-with-fresh-mint-and-ice-cubes-in-glass-jar.jpg?s=612x612&w=0&k=20&c=uOx4iuZuF6mvZhsqa1ndHJ7-94FgqkaLGa5osBHsbBs=" alt="" class="wrap-img">
+                    </div>
+                    <div class="wrap-container-text">
+                        <h4 class="wrap-name">Peach Ice Tea Small</h4>
+                        <p class="wrap-name">&#x20B9 157.00</p>
+                        <button class="add-itm-btn">Add Item</button>
+                    </div>
+                </div>    
+            </div>
+        </div>
+
+        <!-- chillers/mojito end -->
+
+
+    </div>
+
+
+</body>
+</html>

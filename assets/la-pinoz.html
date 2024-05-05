@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>la pinoz's pizza</title>
+    <!-- <link rel="stylesheet" href="./brista_style.css"> -->
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    /*background-color: #D22718;*/
+    background: 
+linear-gradient(125.31deg, #0B5827 0%, #D22718 47.92%, #0B5827 100%);
+}
+
+header{
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 50px;
+    box-sizing: border-box;
+    position: relative;
+    z-index: 10;
+}
+header nav ul{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+.logo{
+    height: 675px;
+    /* background-image: url(.jpg);
+    background-repeat: no-repeat;
+    display: flex;
+    /* justify-content: center; */
+    /* border-radius:20px ; */
+    margin: 15px;
+}
+.logo1{
+    /* border-radius: 70%;
+    padding: 20px ; */
+    object-fit: cover;
+    width: 100%;
+    height: 669px;
+    border-radius: 20px;
+    
+
+}
+.logo-1{
+    cursor: pointer;
+   
+    margin-bottom: -20px;
+    height: 52px;
+    width: 52px;
+    
+}
+.nav-linkss{
+    list-style: none;
+}
+.nav-linkss li{
+    display: inline-block;
+    padding: 0px 20px;
+    font-family: "Ubuntu", sans-serif;
+}
+.nav-linkss li a {
+    transition: all 0.3s ease 0s;
+    color: white;
+    font-weight: 600;
+    text-decoration: none;
+    
+    
+}
+.nav-linkss li a:hover{
+    color: #c6a969;
+}
+
+/* outlet item div start  */
+
+.outlet-items-container{
+    background-color:whitesmoke;
+    padding: 20px;
+    border-radius: 20px;
+    margin: 15px;
+    
+}
+.heading{
+    color: black;
+}
+.wraps{
+    align-items: center;
+    text-align: center;
+    /*font-family: "Roboto", sans-serif;*/
+    font-weight: 600;
+    font-style: normal;
+}
+.light-meals{
+    align-items: center;
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+
+}
+.wrap-container-main{
+    /* padding: 10px; */
+    margin: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-between;
+}
+.wrap-container{
+    padding: 9px;
+    margin: 20px;
+    height: 110px;
+    width:350px;
+    background-color:white;
+    display: flex;
+    justify-content:space-around;
+    border-radius: 10px;
+}
+.wrap-container-text{
+    height: 90px;
+    width: 170px;
+}
+.wrap-img{
+    height:100px;
+    width: 120px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+.wrap-name{
+    font-family: "Poppins", sans-serif;
+}
+.add-itm-btn{
+    height: 30px;
+    width: 80px;
+    background-color: #ef233c;
+    border-radius: 10px;
+    color: white;
+    border: none;
+    margin-left: 80px;
+    transition: 200ms;
+    transition-timing-function: ease-in-out;
+}
+.add-itm-btn:hover{
+    transform: scale(1.1);
+}
+
+
+
+/* outlet item div enddd  */
+</style>
+<body>
+
+    <header>
+        <nav class="logo-container">
+            <img src="foodhub-logo.png" alt="logo" class="logo-1">
+        </nav>
+        <nav>
+            <ul class="nav-linkss">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Restaurant</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="./login.html">Log In</a></li>
+                <li><a href="#">Cart</a></li>
+
+            </ul>
+        </nav>
+    </header>
+
+
+    <!-- logo start -->
+    
+    <div class="logo">
+        <img src="./bg-la-pinoz-main.png"  class="logo1">
+    </div>
+
+    <!-- logo end -->
+
+    <!-- simply veg pizza start -->
+    
+    <div class="outlet-items">
+
+        <div class="outlet-items-container">
+
+            <div class="heading">
+                <h1 class="wraps">---------------- Simply Veg Pizza ----------------</h1>
+            </div>
+
+
+            <div class="wrap-container-main">
+                <div class="wrap-container">
+                    <div class="wrap-container-img">
+                        <img src="https://img.freepik.com/premium-photo/italian-pizza-margarita-black-background-top-view-free-space-text_275899-410.jpg" alt="" class="wrap-img">
+                    </div>
+                    <div class="wrap-container-text">
+                        <h4 class="wrap-name">Margherita</h4>
+                        <p class="wrap-name">&#x20B9 99.00</p>
+                        <button class="add-itm-btn">Add Item</button>
+                    </div>
+                </div>
+
+
+                <div class="wrap-container">
+                    <div class="wrap-container-img">
+                        <img src="https://lh3.googleusercontent.com/tCKPz3ufCFVtsAcArjWNhK8VS85L2iXte8rqDhi7zJ45IcoaVXDb0B5Nlob59cedH56DbJUtqBbvbiQbrTqHYxGUZL1xeytAE29YRUw" alt="" class="wrap-img">
+                    </div>
+                    <div class="wrap-container-text">
+                        <h4 class="wrap-name">Garden Delight Pizza</h4>
+                        <p class="wrap-name">&#x20B9 140.00</p>
+                        <button class="add-itm-btn">Add Item</button>
+                    </div>
+                </div>
+
+
+                <div class="wrap-container">
+                    <div class="wrap-container-img">
+                        <img src="https://cdnaz.plotch.io/image/upload/w_550/C/V/PLO8NHeB2V1702466451_c0f53e72ff98122a5bc1b921ae4cdeab2f2ac626eb1a09483ad6eccaf5cacc86.jpg" alt="" class="wrap-img">
+                    </div>
+                    <div class="wrap-container-text">
+                        <h4 class="wrap-name">Spring Filing Pizza</h4>
+                        <p class="wrap-name">&#x20B9 140.00</p>
+                        <button class="add-itm-btn">Add Item</button>
+                    </div>
+                </div>
+
+
+                <div class="wrap-container">
+                    <div class="wrap-container-img">
+                        <img src="https://media-assets.swiggy.com/swiggy/image/upload/f_auto,q_auto,fl_lossy/lvdpvmmsuexxtqmdjbp2" alt="" class="wrap-img">
+                    </div>
+                    <div class="wrap-container-text">
+                        <h4 class="wrap-name">Country Side</h4>
+                        <p class="wrap-name">&#x20B9 140.00</p>
+                        <button class="add-itm-btn">Add Item</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- simply veg pizza end -->
+
+
+        <!-- exotic veg start -->
+
+        <div class="outlet-items-container">
+
+            <div class="heading">
+                <h1 class="wraps"> ---------------- Exotic Veg ----------------</h1>
+            </div>
+            
+
+            <div class="wrap-container-main">
+                <div class="wrap-container">
+                    <div class="wrap-container-img">
+                        <img src="https://media-cdn.tripadvisor.com/media/photo-s/1a/c2/97/2f/buddha-garden-pizza.jpg" alt="" class="wrap-img">
+                    </div>
+                    <div class="wrap-container-text">
+                        <h4 class="wrap-name">Garden Special Pizza</h4>
+                        <p class="wrap-name">&#x20B9 160.00</p>
+                        <button class="add-itm-btn">Add Item</button>
+                    </div>
+                </div>
+
+
+                <div class="wrap-container">
+                    <div class="wrap-container-img">
+                        <img src="https://lh3.googleusercontent.com/k2NTeglmS6S0OS9mW-Bkik8ZUnbczPdwFiqJy_N4F43_iM6okwTrpCDsnQ0mKZOYoaVxAgeSPAFuS2KBvsz4HudOcCfPTJ0s40zzllLj=w512-rw" alt="" class="wrap-img">
+                    </div>
+                    <div class="wrap-container-text">
+                        <h4 class="wrap-name">Farm Villa</h4>
+                        <p class="wrap-name">&#x20B9 160.00</p>
+                        <button class="add-itm-btn">Add Item</button>
+                    </div>
+                </div>
+                
+
+                <div class="wrap-container">
+                    <div class="wrap-container-img">
+                        <img src="https://i.pinimg.com/736x/20/f5/51/20f5510a762bdf261ad3c309dd6c6fbe.jpg" alt="" class="wrap-img">
+                    </div>
+                    <div class="wrap-container-text">
+                        <h4 class="wrap-name">Burn To Hell</h4>
+                        <p class="wrap-name">&#x20B9 160.00</p>
+                        <button class="add-itm-btn">Add Item</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- exotic veg end -->
+
+
+        <!-- speciality veg start -->
+
+        <div class="outlet-items-container">
+
+            <div class="heading">
+                <h1 class="wraps">---------------- Speciality Veg ----------------</h1>
+            </div>
+
+
+            <div class="wrap-container-main">
+                <div class="wrap-container">
+                    <div class="wrap-container-img">
+                        <img src="https://d4t7t8y8xqo0t.cloudfront.net/resized/720X480/restaurant%2F685551%2Frestaurant220221128110538.jpeg" alt="" class="wrap-img">
+                    </div>
+                    <div class="wrap-container-text">
+                        <h4 class="wrap-name">Peri Peri Veg Pizza</h4>
+                        <p class="wrap-name">&#x20B9 180.00</p>
+                        <button class="add-itm-btn">Add Item</button>
+                    </div>
+                </div>
+
+
+                <div class="wrap-container">
+                    <div class="wrap-container-img">
+                        <img src="https://slice-menu-assets-prod.imgix.net/103981/1706125648_cd95c703b8?fit=crop&w=480&h=480" alt="" class="wrap-img">
+                    </div>
+                    <div class="wrap-container-text">
+                        <h4 class="wrap-name">Hot Passion Pizza</h4>
+                        <p class="wrap-name">&#x20B9 180.00</p>
+                        <button class="add-itm-btn">Add Item</button>
+                    </div>
+                </div>
+
+
+                <div class="wrap-container">
+                    <div class="wrap-container-img">
+                        <img src="https://lh5.googleusercontent.com/Hfm6dB8LYq__Q4OPFYRmj8oAkk3rnJuvvkEIutbW2_el0I5hyHDUVN0irkpKCUyCWT04Ap7PPG7273yg0b0Fn6osfJK82ZRfjrnyBQeiwV-_sKSsRa_0WSg_UzhF2kD6E2qH2nzlk-EkkFV5v9uVdaxCdIDf5upTtqsEjSZOy8zA4_koVH97THdFX1yzNA" alt="" class="wrap-img">
+                    </div>
+                    <div class="wrap-container-text">
+                        <h4 class="wrap-name">Las Vegas Treat Pizza</h4>
+                        <p class="wrap-name">&#x20B9 180.00</p>
+                        <button class="add-itm-btn">Add Item</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+                
+        <!-- speciality veg end -->
+
+
+        <!-- classic pizza start -->
+
+
+        <div class="outlet-items-container">
+
+            <div class="heading">
+                <h1 class="wraps">---------------- Classic Pizza ----------------</h1>
+            </div>
+
+            <div class="wrap-container-main">
+                <div class="wrap-container">
+                    <div class="wrap-container-img">
+                        <img src="https://media-assets.swiggy.com/swiggy/image/upload/f_auto,q_auto,fl_lossy/07073d703ac8e4e2048128ea59f208a3" alt="" class="wrap-img">
+                    </div>
+                    <div class="wrap-container-text">
+                        <h4 class="wrap-name">Onions</h4>
+                        <p class="wrap-name">&#x20B9 75.00</p>
+                        <button class="add-itm-btn">Add Item</button>
+                    </div>
+                </div>
+
+
+                <div class="wrap-container">
+                    <div class="wrap-container-img">
+                        <img src="https://www.midwestliving.com/thmb/_xaM6iqD2g4H-XOlD2cS1zUmgB4=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/Sweet-Corn-Pizza-101685028_w_0-597a83191e81495395b2d5084de7132e.jpg" alt="" class="wrap-img">
+                    </div>
+                    <div class="wrap-container-text">
+                        <h4 class="wrap-name">Sweet Corns</h4>
+                        <p class="wrap-name">&#x20B9 85.00</p>
+                        <button class="add-itm-btn">Add Item</button>
+                    </div>
+                </div>
+                
+
+                <div class="wrap-container">
+                    <div class="wrap-container-img">
+                        <img src="https://img.cdn4dd.com/cdn-cgi/image/fit=contain,width=1200,height=672,format=auto/https://doordash-static.s3.amazonaws.com/media/photos/91d733ce-bf1c-4294-b412-4b6dde982a52-retina-large.jpg" alt="" class="wrap-img">
+                    </div>
+                    <div class="wrap-container-text">
+                        <h4 class="wrap-name">Onions & Paneer</h4>
+                        <p class="wrap-name">&#x20B9 115.00</p>
+                        <button class="add-itm-btn">Add Item</button>
+                    </div>
+                </div>
+
+
+                <div class="wrap-container">
+                    <div class="wrap-container-img">
+                        <img src="https://i.pinimg.com/564x/e2/07/2c/e2072cfd98096b1be40186b5a10b1035.jpg" alt="" class="wrap-img">
+                    </div>
+                    <div class="wrap-container-text">
+                        <h4 class="wrap-name">Capcicum & Paneer</h4>
+                        <p class="wrap-name">&#x20B9 115.00</p>
+                        <button class="add-itm-btn">Add Item</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- classic pizza end -->
+
+
+        <!-- pasta start -->
+
+        <div class="outlet-items-container">
+
+            <div class="heading">
+                <h1 class="wraps">---------------- Pasta ----------------</h1>
+            </div>
+
+            <div class="wrap-container-main">
+                <div class="wrap-container">
+                    <div class="wrap-container-img">
+                        <img src="https://static.toiimg.com/photo/93068647.cms" alt="" class="wrap-img">
+                    </div>
+                    <div class="wrap-container-text">
+                        <h4 class="wrap-name">Mexicana</h4>
+                        <p class="wrap-name">&#x20B9 169.00</p>
+                        <button class="add-itm-btn">Add Item</button>
+                    </div>
+                </div>
+
+                
+                <div class="wrap-container">
+                    <div class="wrap-container-img">
+                        <img src="https://www.indianveggiedelight.com/wp-content/uploads/2022/12/white-sauce-pasta-featured.jpg" alt="" class="wrap-img">
+                    </div>
+                    <div class="wrap-container-text">
+                        <h4 class="wrap-name">Italiano</h4>
+                        <p class="wrap-name">&#x20B9 169.00</p>
+                        <button class="add-itm-btn">Add Item</button>
+                    </div>
+                </div>
+                
+                
+                
+                <div class="wrap-container">
+                    <div class="wrap-container-img">
+                        <img src="https://aartimadan.com/wp-content/uploads/2020/07/White-Sauce-Pasta.jpg" alt="" class="wrap-img">
+                    </div>
+                    <div class="wrap-container-text">
+                        <h4 class="wrap-name">Mix Sauce</h4>
+                        <p class="wrap-name">&#x20B9 169.00</p>
+                        <button class="add-itm-btn">Add Item</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+                
+        <!-- pasta end -->
+        
+        
+        <!-- Quesadillas start -->
+
+        <div class="outlet-items-container">
+            <div class="heading">
+                <h1 class="wraps">---------------- Quesadillas (3PCS) ----------------</h1>
+            </div>
+            <div class="wrap-container-main">
+                <div class="wrap-container">
+                    <div class="wrap-container-img">
+                        <img src="https://t3.ftcdn.net/jpg/06/17/39/44/360_F_617394412_tdBld0pWwFLeeLKitDCk0TYb5xymcabP.jpg" alt="" class="wrap-img">
+                    </div>
+                    <div class="wrap-container-text">
+                        <h4 class="wrap-name">Paneer,Sweet Corn and Cheese</h4>
+                        <p class="wrap-name">&#x20B9 129.00</p>
+                        <button class="add-itm-btn">Add Item</button>
+                    </div>
+                </div>
+
+
+                <div class="wrap-container">
+                    <div class="wrap-container-img">
+                        <img src="https://www.foodandwine.com/thmb/Cwd1RrdtjUS3DBqWT9eGrRBFlSM=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/Mushroom-Reuben-Quesadilla-FT-RECIPE0321-199e3d7edb924572b1a7c2b1369db6a9.jpg" alt="" class="wrap-img">
+                    </div>
+                    <div class="wrap-container-text">
+                        <h4 class="wrap-name">Mushroom, Olives and Cheese</h4>
+                        <p class="wrap-name">&#x20B9 129.00</p>
+                        <button class="add-itm-btn">Add Item</button>
+                    </div>
+                </div>
+                
+                
+                <div class="wrap-container">
+                    <div class="wrap-container-img">
+                        <img src="https://curlytales.com/wp-content/uploads/2023/08/quesadilla.jpg" alt="" class="wrap-img">
+                    </div>
+                    <div class="wrap-container-text">
+                        <h4 class="wrap-name">Veggie Mexican</h4>
+                        <p class="wrap-name">&#x20B9 129.00</p>
+                        <button class="add-itm-btn">Add Item</button>
+                    </div>
+                </div>    
+            </div>
+        </div>
+
+        <!-- Quesadillas end -->
+
+
+        <!-- tacos start -->
+
+        <div class="outlet-items-container">
+
+            <div class="heading">
+                <h1 class="wraps">---------------- Tacos ----------------</h1>
+            </div>
+
+            <div class="wrap-container-main">
+                <div class="wrap-container">
+                    <div class="wrap-container-img">
+                        <img src="https://static.vecteezy.com/system/resources/previews/023/186/683/large_2x/tacos-with-meat-and-vegetables-on-a-black-background-with-smoke-ai-generative-image-free-photo.jpg" alt="" class="wrap-img">
+                    </div>
+                    <div class="wrap-container-text">
+                        <h4 class="wrap-name">Mushroom,Corns and Onions</h4>
+                        <p class="wrap-name">&#x20B9 129.00</p>
+                        <button class="add-itm-btn">Add Item</button>
+                    </div>
+                </div>
+
+
+                <div class="wrap-container">
+                    <div class="wrap-container-img">
+                        <img src="https://www.madhuseverydayindian.com/wp-content/uploads/2022/11/paneer-tacos.jpg" alt="" class="wrap-img">
+                    </div>
+                    <div class="wrap-container-text">
+                        <h4 class="wrap-name">Paneer Tikka and Red Paprika Tacos</h4>
+                        <p class="wrap-name">&#x20B9 129.00</p>
+                        <button class="add-itm-btn">Add Item</button>
+                    </div>
+                </div>
+
+
+                <div class="wrap-container">
+                    <div class="wrap-container-img">
+                        <img src="https://www.mystore.in/s/62ea2c599d1398fa16dbae0a/657a8c97d7f0c94c13437b51/image-2377-1687414531.jpg" alt="" class="wrap-img">
+                    </div>
+                    <div class="wrap-container-text">
+                        <h4 class="wrap-name">Paneer & Corns Tacos</h4>
+                        <p class="wrap-name">&#x20B9 129.00</p>
+                        <button class="add-itm-btn">Add Item</button>
+                    </div>
+                </div>    
+            </div>
+        </div>
+
+        <!-- tacos end -->
+
+
+        <!--  choco lava start -->
+
+        <div class="outlet-items-container">
+
+            <div class="heading">
+                <h1 class="wraps">---------------- Choco Lava ----------------</h1>
+            </div>
+
+            <div class="wrap-container-main">
+                <div class="wrap-container">
+                    <div class="wrap-container-img">
+                        <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=1080/assets/search/usecase/choco_lava_cake_zdish.png" alt="" class="wrap-img">
+                    </div>
+                    <div class="wrap-container-text">
+                        <h4 class="wrap-name">Choco Lava</h4>
+                        <p class="wrap-name">&#x20B9 89.00</p>
+                        <button class="add-itm-btn">Add Item</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- choco lava end -->
+
+
+    </div>
+
+
+</body>
+</html>
